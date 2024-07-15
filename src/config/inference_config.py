@@ -16,11 +16,11 @@ from .base_config import PrintableConfig, make_abs_path
 class InferenceConfig(PrintableConfig):
     # MODEL CONFIG, NOT EXPORTED PARAMS
     models_config: str = make_abs_path('./models.yaml')  # portrait animation config
-    checkpoint_F: str = make_abs_path('../../pretrained_weights/liveportrait/base_models/appearance_feature_extractor.pth')  # path to checkpoint of F
-    checkpoint_M: str = make_abs_path('../../pretrained_weights/liveportrait/base_models/motion_extractor.pth')  # path to checkpoint pf M
-    checkpoint_G: str = make_abs_path('../../pretrained_weights/liveportrait/base_models/spade_generator.pth')  # path to checkpoint of G
-    checkpoint_W: str = make_abs_path('../../pretrained_weights/liveportrait/base_models/warping_module.pth')  # path to checkpoint of W
-    checkpoint_S: str = make_abs_path('../../pretrained_weights/liveportrait/retargeting_models/stitching_retargeting_module.pth')  # path to checkpoint to S and R_eyes, R_lip
+    checkpoint_F: str = make_abs_path('../../pretrained_weights/liveportrait/liveportrait/base_models/appearance_feature_extractor.pth')  # path to checkpoint of F
+    checkpoint_M: str = make_abs_path('../../pretrained_weights/liveportrait/liveportrait/base_models/motion_extractor.pth')  # path to checkpoint pf M
+    checkpoint_G: str = make_abs_path('../../pretrained_weights/liveportrait/liveportrait/base_models/spade_generator.pth')  # path to checkpoint of G
+    checkpoint_W: str = make_abs_path('../../pretrained_weights/liveportrait/liveportrait/base_models/warping_module.pth')  # path to checkpoint of W
+    checkpoint_S: str = make_abs_path('../../pretrained_weights/liveportrait/liveportrait/retargeting_models/stitching_retargeting_module.pth')  # path to checkpoint to S and R_eyes, R_lip
 
     # EXPORTED PARAMS
     flag_use_half_precision: bool = True
